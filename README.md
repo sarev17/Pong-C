@@ -37,8 +37,9 @@
 O Jogo Pong feito em C é um projeto que foi utilizado como Trabalho Final na disciplina de Programação Computacional para a Universidade Federal do Ceará - Campus Sobral no ano de 2016.
 
 Alunos:
-- Francisco Willian Santos Praciano
-- André Veras
+- André Veras <a href="https://github.com/sarev17"> GitHub</a> 
+- Francisco Willian Santos Praciano <a href="https://github.com/willianpraciano"> GitHub</a>
+
 
 # Instruções de jogo
 ## Modos
