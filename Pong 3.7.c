@@ -11,6 +11,14 @@
 #include <time.h>
 
 
+int random(){
+	srand(time(NULL)); // gera uma semente randomica
+	int y = rand() % 19;
+	if(y==0)
+		y=1; 
+	return y;
+}
+
 //FUNÇÃO GOTOXY
 // Tirado do site: ---> http://forum.imasters.com.br/topic/413810-resolvidogotoxy-fail/
 void gotoxy(int x,int y)
@@ -332,8 +340,9 @@ vencecomp()
 //PAYER1 VS PLAYER2
 multiplayer()
 {
-	 int x=1,y=1,dx=1,dy=1,i; //variaveis bola
-
+	 int x=1,y=random(),dx=1,dy=1,i; //variaveis bola
+	
+		
 	 int a=58, b=8;//posição barra direita
 
 	 int m=1,n=8; //posição barra esquerda
@@ -396,6 +405,7 @@ multiplayer()
 		    {
 			  //se a bola ("x" da bola) chegar na coluna 58 e ("y" da bola) estiver em baixo do desenho da barra o jogador 1 ganha 1 ponto
 			  pontos1++;
+			  
 		    }
 		if (x==58 && (y<b) )
 			   {
@@ -509,8 +519,8 @@ multiplayer()
 //CONTRA O COMPUTADOR
 contramaquina()
 {
-	 int x=1,y=1,dx=1,dy=1,i; //variaveis bola
-
+	 int x=1,y=random(),dx=1,dy=1,i; //variaveis bola
+		
 	 int a=58, b=1, db=1 ;//posição barra direita
 
 	 int m=1,n=8; //posição barra esquerda
